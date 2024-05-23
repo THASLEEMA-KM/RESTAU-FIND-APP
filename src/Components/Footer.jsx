@@ -21,7 +21,7 @@ function Footer() {
           <p>Currently v5.3.2.</p>
         </div>
         <div className="links d-flex flex-column">
-          <h5 className="py-2 text-warning">Links</h5>
+          <h5 className="py-2 text-warning fw-bolder">Links</h5>
           <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
             Landing
           </Link>
@@ -30,7 +30,7 @@ function Footer() {
           </Link>
         </div>
         <div className="Guides d-flex flex-column">
-          <h5 className="py-2 text-warning">Guides </h5>
+          <h5 className="py-2 text-warning fw-bolder">Guides </h5>
           <a
             href=""
             style={{ textDecoration: "none", color: "white" }}
@@ -54,7 +54,7 @@ function Footer() {
           </a>
         </div>
         <div className="Contact d-flex flex-column">
-          <h5 className="py-2 text-warning">Contact Us</h5>
+          <h5 className="py-2 text-warning fw-bolder">Contact Us</h5>
           <div className="d-flex">
             <input
               type="text"
