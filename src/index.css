@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Marck Script", cursive;
+    overflow-x: hidden;
+
+}
+.carddiv
+{
+    max-width: 300px;
+    background-color: #000000;
+    box-shadow: 0px 0px 25px black;
+    overflow: hidden;
+    
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.carddiv img
+{
+    
+    height:400px;
+    opacity: 100%;
+    width: 100%;
+    
+}
+.cardname h3
+{
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+    font-family: "Bad Script", cursive;
+}
+.carddetail h2
+{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    font-family: "Bad Script", cursive;
+    
+}
+.carddetail h3
+{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    font-family: "Bad Script", cursive;
+}
+.carddiv:hover img
+{
+    filter: blur(5px);
+    
+}
+.carddetail :hover h3,h2
+{
+    /* transform: skewX(10.25); */
+    transform: scale3d(1.1,1.1,1.1);
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: black;
+    
+  }
