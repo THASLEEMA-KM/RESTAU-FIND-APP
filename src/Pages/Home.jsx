@@ -28,7 +28,7 @@ const Home = () => {
    const indexOfFirstRestaurant = indexOfLastRestaurant - restaurantPerPage;
   //  const currentRestaurants = allRestaurants?.slice(indexOfFirstRestaurant, indexOfLastRestaurant);
   const currentRestaurants = Array.isArray(allRestaurants) ? allRestaurants.slice(indexOfFirstRestaurant, indexOfLastRestaurant) : [];
-
+console.log(currentRestaurants);
    const paginate = (pageNumber) => {
     if (
       pageNumber >= 1 &&

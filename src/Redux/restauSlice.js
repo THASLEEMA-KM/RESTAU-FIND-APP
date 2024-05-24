@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchRestaurants = createAsyncThunk('restaurants/fetchRestaurants',async()=>
     {
         // const result = await axios.get("https://restau-find-server.onrender.com")
-        const result = await axios.get("http://localhost:3000/restaurants")
+        const result = await axios.get("http://localhost:3001/restaurants")
 
         localStorage.setItem("allRestaurants",JSON.stringify(result.data))
 
