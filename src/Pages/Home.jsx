@@ -71,7 +71,7 @@ const Home = () => {
               ))
             ) : (
               <div className="text-center text-danger">
-                <h1 className='text-danger'>NOTHING TO DISPLAY</h1>
+                <h1 className='text-danger'  style={{overflow:'hidden'}}>NOTHING TO DISPLAY</h1>
               </div>
             )}
           </Row>
