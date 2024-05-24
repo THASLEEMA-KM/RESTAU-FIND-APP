@@ -26,7 +26,8 @@ const Home = () => {
  
    const indexOfLastRestaurant = currentPage * restaurantPerPage;
    const indexOfFirstRestaurant = indexOfLastRestaurant - restaurantPerPage;
-   const currentRestaurants = allRestaurants?.slice(indexOfFirstRestaurant, indexOfLastRestaurant);
+  //  const currentRestaurants = allRestaurants?.slice(indexOfFirstRestaurant, indexOfLastRestaurant);
+  const currentRestaurants = Array.isArray(allRestaurants) ? allRestaurants.slice(indexOfFirstRestaurant, indexOfLastRestaurant) : [];
 
    const paginate = (pageNumber) => {
     if (
@@ -48,8 +49,9 @@ const Home = () => {
           </div>
         ) : (
           <Row className='my-5 ms-3' >
-            {currentRestaurants?.length > 0 ? (
-              currentRestaurants.map(restaurant => (
+            {
+              currentRestaurants?.length > 0 ? (
+              currentRestaurants?.map((restaurant) => (
                 <Col sm={12} md={6} lg={4} xl={4} key={restaurant.id} style={{overflow:'hidden'}}
                 className="  d-flex justify-content-center  align-items-center flex-column">
                     <div className="carddiv " data-aos='zoom-in-down' >
